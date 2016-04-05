@@ -149,7 +149,7 @@ def firmware_activate_ucsm(handle, version="2.2(2c)"):
     firmware_infra_pack.infra_bundle_version = infra_bundle
 
     set_flag = False
-    set_str = raw_input("Are you sure want to proceed? This will reboot the "
+    set_str = input("Are you sure want to proceed? This will reboot the "
                     "server.Enter 'yes' to proceed.")
     if set_str.strip().lower() == "yes":
         set_flag = True
@@ -229,7 +229,7 @@ def firmware_activate_blade(handle, version):
         host_firmware_pack.blade_bundle_version = blade_bundle
 
         set_flag = False
-        set_str = raw_input("Are you sure want to proceed? This will reboot "
+        set_str = input("Are you sure want to proceed? This will reboot "
                             "the server.Enter 'yes' to proceed.")
         if set_str.strip().lower() == "yes":
             set_flag = True
